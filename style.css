@@ -54,7 +54,7 @@ a:hover {
 /* main */
 
 .section-1 {
-    height: 420px;
+    padding: 10rem 0;
     background-image: url("img/mainbanner.png");
     background-size: cover;
     background-position: center;
@@ -288,4 +288,138 @@ footer {
     text-align: center;
     font-weight: bold;
     padding-bottom: 200px;
+}
+
+/* Responsividade */
+
+@media screen and (max-width: 600px) {
+    header,
+    main,
+    footer {
+        width: 100vw;
+        margin: 0;
+    }
+
+    nav {
+        padding: 16px;
+    }
+
+    .navbar,
+    .navbar a {
+        font-size: 14px;
+        margin: 0 auto;
+    }
+
+    .navbar {
+        width: 100%;
+        gap: 0px;
+    }
+
+    header img {
+        width: 40px;
+    }
+
+    .navbar .nav-btn {
+        padding: 6px 8px;
+    }
+
+    .title-description {
+        padding: 4px;
+    }
+
+    .title-description p {
+        font-size: 24px;
+    }
+
+    .section-2,
+    .section-3 {
+        padding: 0;
+    }
+
+    .section-2 li {
+        margin-top: 24px;
+    }
+
+    .section-2 ul,
+    .section-3 ul {
+        flex-direction: column;
+    }
+
+    .section-4 input[type="text"] {
+        font-size: 10px;
+    }
+
+    .section-5 textarea {
+        width: 70vw;
+    }
+
+    li {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 600px) and (max-width: 1024px) {
+    header,
+    main,
+    footer {
+        width: 100vw;
+        margin: 0;
+    }
+
+    nav {
+        padding: 16px 100px;
+    }
+
+    .navbar a {
+        margin: 12px;
+        margin-left: auto;
+    }
+
+    .navbar {
+        width: 100%;
+    }
+
+    .title-description {
+        padding: 4px;
+    }
+
+    .title-description p {
+        font-size: 24px;
+    }
+
+    .section-2,
+    .section-3 {
+        padding: 0;
+    }
+
+    .section-2 ul,
+    .section-3 ul {
+        flex-direction: column;
+    }
+
+    .section-2 li {
+        margin-top: 24px;
+    }
+
+    .section-2 p {
+        font-size: 20px;
+    }
+
+    .section-2 .benefit-title {
+        font-size: 22px;
+    }
+
+    .section-5 textarea {
+        width: 70vw;
+    }
+
+    li {
+        width: 80vw;
+    }
+}
+
+@media screen and (min-width: 1024px) {
+    .section-3 ul {
+        gap: 24px;
+    }
 }
