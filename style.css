@@ -4,6 +4,10 @@
     padding: 0;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
 body { font-family: "Inter", sans-serif;}
 
 /* Header */
@@ -13,6 +17,9 @@ nav {
     padding: 16px 40px;
     display: flex;
     align-items: center;
+    position: fixed;
+    width: 100vw;
+    z-index: 1;
 }
 
 nav img {
@@ -111,6 +118,10 @@ ul {
 
 /* section  3 */
 
+.section-3 {
+    padding: 0;
+}
+
 .section-3 h2 {
     margin-top: 80px;
     color: #333;
@@ -119,6 +130,13 @@ ul {
 
 .section-3 p {
     font-size: 18px;
+}
+
+.plans-table {
+    display: flex;
+    justify-content: space-around;
+    gap: 24px;
+    max-width: 100vw;
 }
 
 .plan-price,
@@ -331,8 +349,7 @@ footer {
         font-size: 24px;
     }
 
-    .section-2,
-    .section-3 {
+    .section-2 {
         padding: 0;
     }
 
@@ -340,8 +357,11 @@ footer {
         margin-top: 24px;
     }
 
-    .section-2 ul,
-    .section-3 ul {
+    .section-2 ul {
+        flex-direction: column;
+    }
+
+    .plans-table {
         flex-direction: column;
     }
 
@@ -392,8 +412,7 @@ footer {
         padding: 0;
     }
 
-    .section-2 ul,
-    .section-3 ul {
+    .section-2 ul{
         flex-direction: column;
     }
 
@@ -416,10 +435,14 @@ footer {
     li {
         width: 80vw;
     }
+
+    .plans-table {
+        flex-direction: column;
+    }
 }
 
-@media screen and (min-width: 1024px) {
-    .section-3 ul {
-        gap: 24px;
+@media screen and (max-width: 1280px) {
+    .plans-table {
+        flex-direction: column;
     }
 }
